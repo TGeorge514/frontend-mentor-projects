@@ -1,34 +1,138 @@
+<!--ecommerce sneakers page-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- displays site properly based on user's device -->
   
-  <title>Frontend Mentor | QR code component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">    <!--displays icon thumbnail on browser tab-->
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/mediaqueries.css">
 
+  <link rel="stylesheet" href="./styles/scripts.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+  </style>
 </head>
+
 <body>
-  <main>
-    <div class="container">
+  <header>
+    <div>
       <div>
-        <img src="./images/image-qr-code.png" alt="QR code">
+        <!--hamburger menu logo-->
+        <span class="hamburger-menu" onmousedown="topMenuUp()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </span>
+        
+        <a href="#"><img src="./images/logo.svg" alt="sneakers logo"></a>
       </div>
-      <h2>
-        Improve your front-end skills by building projects
-      </h2>
-      <p>
-        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-      </p>
-      
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">TiJo</a>.
+      <nav>
+        <!--x button-->
+        <span onmousedown="topMenuDown()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+          </svg>
+        </span>
+        <a href="#">Collections</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+
+    <div>
+      <a href="#"><img src="./images/icon-cart.svg" alt="shopping cart"></a>
+      <sup id="cart-qty"></sup>
+      <a href="#" target="_blank"><img src="./images/image-avatar.png" alt="avatar logo" class="avatar"></a>
+    </div>
+    <!--basket box-->
+    <div id="basket-box">
+      <p>cart</p>
+      <hr>
+      <div>
+        <span>your cart is empty.</span>
+      </div>
+      <!--trash can icon-->
+      <span class="trash">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+          <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+          <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+        </svg>
+      </span>
+    </div>
+  </header>
+
+  <hr>
+
+  <main>
+    <aside>
+      <div class="main-img">
+        <a href="#"><img src="./images/image-product-1.jpg" alt="main sneaker image" id="main-sneaker-img"></a>
+      </div>
+      <div class="thumbnail-img">
+        <a href="#"><img src="./images/image-product-2.jpg" alt="small thumbnail shoes 1"></a>
+        <a href="#"><img src="./images/image-product-3.jpg" alt="small thumbnail shoes 2"></a>
+        <a href="#"><img src="./images/image-product-4.jpg" alt="small thumbnail shoes 3"></a>
+        <a href="#"><img src="./images/image-product-1.jpg" alt="small thumbnail shoes 4"></a>
+      </div>
+    </aside>
+
+    <!--light box-->
+    <div class="lightbox">
+      <span class="close">&times;</span>
+      <img alt="">
+      <div class="arrows">
+        <a id="previous" onclick="moveSlide(-1)"><=</a>
+        <a id="next" onclick="moveSlide(1)">=></a>
       </div>
     </div>
+
+    <article>
+      <div>
+        <span class="bold">SNEACKER COMPANY</span>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+        <div>
+          <span>
+            <span class="bold big-price">$125.00</span>
+            <span class="discount-bckground">50%</span>
+          </span>
+          <br>
+          <span class="crossed">$250.00</span>
+        </div>
+      </div>
+
+      <div>
+        <input type="button" value=" - " class="bold">
+        <input type="button" value="0" disabled style="color: black;">
+        <input type="button" value=" + " class="bold">
+        
+        <button class="addToCart"><a href="#"><img src="./images/icon-cart.svg" alt="shopping cart"> Add to cart</a></button>
+      </div>
+    </article>
   </main>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.tigeorge.ca" target="_blank">tigeorge.ca</a> aka Ti-George. 2024
+    </div>
+  </footer>
+
+  <script src="./scripts/index.js"></script>
 </body>
 </html>

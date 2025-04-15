@@ -1,0 +1,164 @@
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+aside, article{
+    width: 40%;
+}
+
+/************************************************/
+/******** Shoes Styles **************************
+***********************************************/
+img{
+    border-radius: var(--border);
+}
+
+.main-img img{
+    width: 80%;
+}
+
+.thumbnail-img img{
+    width: 15%;
+    margin-right: 5%;
+}
+
+/**********************************************
+************* Text ***************************
+********************************************/
+article{
+    margin-top: 5%;
+}
+
+article > div > span:nth-child(1){
+    color: var(--orange);
+    font-size: .75em;
+}
+
+article div h2{
+    margin-top: 1%;
+    font-size: 3em;
+}
+
+article div p{
+    color: var(--grayish);
+    margin-top: 5%;
+}
+
+article > div:nth-child(1) > div{
+    margin-top: 5%;
+}
+
+article > div:nth-child(2){
+    margin-top: 5%;
+}
+
+.big-price{
+    font-size: 1.25em;
+}
+
+.discount-bckground{
+    background-color: var(--pale-orange);
+    color: var(--orange);
+    padding: .5% 1%;
+    margin-left: 2.5%;
+}
+
+.crossed{
+    text-decoration: line-through;
+    color: var(--grayish);
+}
+
+/*******************************************
+************ Cart Styles ******************
+********************************************/
+.addToCart{
+    width: 30%;
+    padding: 2%;
+    background-color: var(--orange);
+    color: #fff;
+    border-radius: var(--border);
+}
+
+.addToCart a{
+    color: #fff;
+    text-decoration: none;    
+}
+
+.addToCart:hover{
+    opacity: .8;
+    text-decoration: underline;
+}
+
+.addToCart img{
+    width: 10%;
+    color: #fff;
+}
+
+.trash:hover{
+    cursor: pointer;
+    color: red;
+}
+
+input[type="button"]{
+    width: 5%;
+    padding: 1%;
+    color: var(--orange);
+    border: none;
+    font-size: 105%;
+}
+
+/**********************************
+************* Modal ***************
+*************************************/
+.lightbox{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,.85); /* opacity background */
+}
+
+.lightbox img{
+    width: 600px;
+    height: 600px;
+    display: block;
+    margin: 5% auto;
+}
+
+.arrows{
+    cursor: pointer;
+    position: absolute;
+    bottom: 50%;
+    color: red;
+    font-weight: bold;
+    font-size: 3em;
+    margin: auto 15%;
+}
+
+#previous, #next{
+    position: relative;
+}
+
+#previous{
+    left: 100%;
+}
+
+#next{
+    left: 700%;
+}
+
+.close{
+    font-size: 3em;
+    color: var(--grayish);
+    position: absolute;
+    right: 25%;
+}
+
+.close:hover{
+    cursor: pointer;
+    color: var(--orange);
+}

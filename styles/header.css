@@ -1,0 +1,92 @@
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+header div:nth-child(1){
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+header > div > div > img{
+    height: 1.15em;
+}
+
+header div nav{
+    display: flex;
+    gap: 15%;
+}
+
+header div nav span{
+    display: none;
+}
+
+header div nav a{
+    text-decoration: none;
+    color: var(--grayish);
+    font-size: .75em;
+}
+
+header div nav a:hover{
+    text-decoration: underline;
+}
+
+#cart-qty{
+    color: var(--pale-orange);
+    background-color: var(--orange);
+    border-radius: 50%;
+    font-size: .75em;
+    padding: .5em;
+    display: none;
+}
+
+.avatar{
+    height: 3.25em;
+    width: 3.25em;
+    margin-left: 2em;
+}
+
+#basket-box{
+    display: none;
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    top: 4em;
+    right: 10em;
+    border-radius: 5px;
+    box-shadow: -10px 10px 50px 5px #999;
+    background-color: #fff;
+}
+
+#basket-box p:first-child{
+    margin: 10px 0;
+    padding-left: 1em;
+}
+
+#basket-box div span{
+    color: var(--grayish);
+    top: 50px;
+    left: 50px;
+    position: relative;
+    display: flex;
+    gap: 1%;
+    font-size: .9em;
+    flex-wrap: wrap;
+}
+
+#basket-box .trash{
+    color: var(--grayish);
+    display: none;
+    position: relative;
+    right: -300px;
+    top: -25px;
+}
+
+hr{
+    margin: 2% 0;
+}

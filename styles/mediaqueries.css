@@ -1,0 +1,84 @@
+@media (max-width: 550px){
+    body{
+        width: 99%;
+    }
+
+    /***********************************
+    *********** header *****************
+    *************************************/
+    .hamburger-menu{
+        display: inline;
+        margin-right: 15%;
+    }
+
+    header div nav{
+        display: none;
+    }
+
+    /*************************************
+    ********** main **********************
+    **************************************/
+    main{
+        flex-direction: column;
+    }
+
+    main aside{
+        width: 100%;
+    }
+
+    main article{
+        width: 75%;
+        margin: 2% auto;
+    }
+
+    main aside div.main-img img{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    main aside div.thumbnail-img{
+        display: none;
+    }
+
+    article div h2{
+        font-size: 2em;
+    }
+
+    article div p{
+        font-size: 1.15em;
+    }
+
+    article div div{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    article div div span:nth-child(1){
+        display: flex;
+    }
+
+    span.big-price{
+        margin-right: 15%;
+    }
+
+    article div div br{
+        display: none;
+    }
+
+    article > div:nth-child(2){
+        width: 80%;
+        margin: 5% auto;
+        text-align: center;
+    }
+
+    article > div:nth-child(2) > input[type="button"]{
+        width: 30%;
+        /*margin: 0%;*/
+    }
+
+    button.addToCart{
+        display: block;
+        width: 100%;
+        margin: 5% auto;
+    }
+}

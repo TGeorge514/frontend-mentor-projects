@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Kumbh Sans", sans-serif;
+    
+    --border: 15px;
+    --orange: hsl(26, 100%, 55%);
+    --pale-orange: hsl(25, 100%, 94%);
+    --grayish: hsl(219, 9%, 45%);
+}
+
+body{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.bold{
+    font-weight: 700;
+}

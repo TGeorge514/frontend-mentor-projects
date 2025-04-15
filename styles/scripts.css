@@ -1,0 +1,41 @@
+/**********************************
+******* Shoes thumbnail ************
+***********************************/
+.active-thumbnail{
+    border: solid 3px var(--orange);
+    opacity: .5;
+}
+
+/***********************************
+******** Top Nav Menu **************
+************************************/
+.top-menu-display{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 2em;
+    font-size: 1.5em;
+    padding-left: 1em;
+}
+
+/***********************************
+*********** Basket Box ************* 
+***********************************/
+#basket-box img{
+    width: 50px;
+    height: 50px;
+}
+
+.basket-box-btn{
+    text-align: center;
+    margin: 2% auto;
+}
+
+.basket-box-btn:hover{
+    cursor: pointer;
+}
