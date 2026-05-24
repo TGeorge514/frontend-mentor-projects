@@ -1,0 +1,15 @@
+@media screen and (max-width: 740px) {
+    main{
+        flex-direction: column-reverse;
+    }
+
+    main > div{
+        width: 95%;   
+    }
+
+    main div:nth-child(2){
+        height: 33vh;
+        background: url(../../assets/images/illustration-sign-up-mobile.svg);
+        background-size: cover;
+    }
+}

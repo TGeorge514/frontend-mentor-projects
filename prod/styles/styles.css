@@ -1,0 +1,30 @@
+/* Main */
+ul li{
+    list-style: none;
+}
+
+.submit-form{       /* Override Bootstrap */
+    background-color: var(--main-blue)!important;
+    color: var(--main-white);
+    width: 100%;
+}
+
+.main-red{
+    background-color: var(--main-red)!important;
+}
+
+/* Footer */
+footer{
+    margin-top: var(--small);
+    width: 100%;
+    text-align: center;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

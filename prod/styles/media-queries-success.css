@@ -1,0 +1,17 @@
+@media screen and (max-width: 740px) {
+    header, main{
+        width: 95%;
+    }
+
+    header{
+        margin: 5em auto 2em;
+    }
+
+    header h1{
+        font-size: 2em;
+    }
+
+    main{
+        margin-top: 0;
+    }
+}

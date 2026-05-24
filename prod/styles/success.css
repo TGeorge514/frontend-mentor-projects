@@ -1,0 +1,23 @@
+header{
+    width: 40%;
+    margin: var(--small) auto;
+    /*text-align: center;*/
+}
+
+header h1{
+    font-size: 90px;
+}
+
+main{
+    width: 40%;
+    margin: var(--small) auto;
+}
+
+main p span{
+    font-family: Roboto-Bol;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+}
